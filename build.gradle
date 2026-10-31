@@ -21,7 +21,6 @@ repositories {
 		url = 'https://api.modrinth.com/maven'
 		content {
 			includeGroup 'maven.modrinth'
-			includeGroup 'dev.isxander'
 		}
 	}
 	maven {
@@ -46,15 +45,15 @@ dependencies {
 	// Fabric API.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// YACL (config screen UI)
-	implementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
+	// YACL (config screen UI) — published on Modrinth as maven.modrinth:1eAoo2KR:<versionId>
+	implementation "maven.modrinth:1eAoo2KR:${project.yacl_version}"
 
 	// Mod Menu integration is optional for end users but enabled in dev runtime.
 	compileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 	runtimeOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 
-	// Sodium compile stubs for optional compatibility mixins.
-	compileOnly "maven.modrinth:sodium:${project.sodium_version}"
+	// Sodium compile stubs for optional compatibility mixins — published on Modrinth as maven.modrinth:AANobbMI:<versionId>
+	compileOnly "maven.modrinth:AANobbMI:${project.sodium_version}"
 }
 
 processResources {
