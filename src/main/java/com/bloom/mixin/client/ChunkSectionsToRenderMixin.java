@@ -1,9 +1,9 @@
 package com.bloom.mixin.client;
 
 import com.bloom.client.render.BloomSourceRenderer;
-import com.mojang.blaze3d.buffers.GpuBufferSlice;
-import com.mojang.blaze3d.textures.GpuSampler;
-import com.mojang.blaze3d.textures.GpuTextureView;
+import com.mojang.renderpearl.api.buffers.GpuBufferSlice;
+import com.mojang.renderpearl.api.textures.GpuSampler;
+import com.mojang.renderpearl.api.textures.GpuTextureView;
 import com.mojang.blaze3d.systems.RenderPass;
 import java.util.EnumMap;
 import java.util.List;
